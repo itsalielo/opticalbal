@@ -45,7 +45,7 @@ Two more testable hypotheses on record: **Wolff (1963)** — balance = even dist
 
 ## 5. The honest cautions
 
-- **Teixeira et al. (2026):** hue and saturation don't separate in ecological stimuli — fixed native values may be un-runnable outside the lab.
+- ~~Teixeira et al. (2026)~~ — RETRACTED 2026-10-09 (Round 5): could not be retrieved after repeated exact-title/DOI searches; the claim is unverified and no longer cited. The separability question now rests on verified work: Alexander & Shansky (1976) jointly fit hue×value×chroma on perceived heaviness (heaviness rises with chroma, falls with value, hue ~nil — never replicated), Ou et al. (2004) found separability is construct-dependent, and Devinck & Knoblauch (2025) ran a three-way conjoint where chroma dropped out.
 - **Hübner (2025):** balance preference flips between production and evaluation tasks — any formula needs a task-frame parameter.
 - **Reber et al. (2004) / McManus et al. (2010):** beauty may live in the perceiver's processing experience with strong *individual* preferences — a purely stimulus-side exact formula may be impossible in principle.
 - **Koenderink et al. (2017):** compositional weight is not photometric — background tone, edge quality, shape, position dominate.
