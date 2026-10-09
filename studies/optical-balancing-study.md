@@ -271,3 +271,41 @@ Round 4 closes four of the five remaining literature fronts: the Japanese experi
 ### Round 4's single most important find
 
 **Hayashi (1969)** — n=587 experimental study of dynamic pictorial balance, free on J-STAGE, with real numbers on position/direction preference: the position arm of the six-factor formula, measured 55 years before the program existed.
+
+---
+
+## 14. Round 5 (2026-10-09) — the discipline's own take, the color factors, the neural analogue
+
+Five new vein files: `optical-balancing-r5-frontier.md` (newest 2026 literature), `optical-balancing-r5-color.md` (the separability question), `optical-balancing-r5-neuro.md` (EEG/fMRI), `optical-balancing-r5-design.md` (design-research venues), `optical-balancing-r5-type.md` (type-design compensation numbers). No duplication of Rounds 1–4.
+
+### Frontier — 6 new Tier 1 (1 core + 5 adjacent), 3 Tier 2
+
+Crown: **He, J. & Liu, C. (2026), "Research on Composition Optimization Methods for Visual Graphic Design Styles Based on Diffusion Models," Proc. 3rd Int. Conf. on Machine Intelligence and Digital Applications, DOI 10.1145/3801438.3803130** — the only new closed-form composition equation of the round: J_comp = αB + βR + γS + δH + εD + ζN + ηA − θC, with **B = visual balance from the second moment of saliency maps**; weights learned via attention gating, anchored to humans through expert paired-ranking calibration; injected as diffusion guidance. It confirms the compute track's prediction exactly: additive form hand-specified, coefficients learned — balance enters as one term, never factor-decomposed. Notable Tier 2: a Sept 2026 Medium essay stating an explicit multiplicative decomposed formula, visualWeightᵢ = normalizedAreaᵢ · contrastFactorᵢ · saturationFactorᵢ · salienceFactorᵢ — unvalidated, unpublished, but the only 2026 instance of a factor decomposition matching the mission's hypothesis. No new peer-reviewed human experiment jointly fitting ≥3 visual-weight factors appeared post-August 2026; the Morriss & Dunlap 1988 two-factor ceiling still stands for spatial-balance tasks.
+
+### Color — 18 new Tier 1; the 2-factor ceiling broken (for heaviness, not balance)
+
+Headline: the "2 → 6 gap" needs a scope correction. For spatial-balance area-ratio tasks M&D 1988 remains the ceiling — but for perceived heaviness of colors, three factors were jointly manipulated decades earlier. **Alexander, K. R., & Shansky, M. S. (1976), "Influence of hue, value, and chroma on the perceived heaviness of colors," *Perception & Psychophysics* 19(1), 72–74** (no DOI, pre-DOI era): magnitude estimation on Munsell colors — heaviness increases with chroma, decreases with value, hue has little influence. The cleanest separability result in the literature, never replicated. **Wright, B. (1962), *American Journal of Psychology* 75(2), 232–241, PMID 14008416** — the earliest 3-factor study (warmth and weight). CIELAB era: **Ou et al. (2004) Part I** — heavy–light = f(L*) only (R²=.76, hue and chroma drop out), colour weight = f(L*, hue), warm–cool = hue×chroma interaction (multiplicative): separability is *construct-dependent*. **Devinck & Knoblauch (2025), DOI 10.1364/JOSAA.545368** — three-way conjoint measurement; chroma drops out. **Koenderink et al. (2018), "Color weight photometry," *Vision Research* 151, 88–98** — max-rule beats linear luminance for compositorial weight. The hue paradox stands unresolved: Pinkerton & Humphrey 1974 (hue survives brightness-matching) vs Alexander & Shansky 1976 (hue drops out) — method-bound, no later paper resolves it.
+
+**Record correction:** Teixeira et al. 2026 (Symmetry) could NOT be retrieved after repeated exact-title/DOI searches — the "hue/saturation don't separate ecologically" claim is UNVERIFIED. Do not cite until found.
+
+### Neuro — 5 new Tier 1 + 1 anchor; still no fMRI balance study
+
+Crown: **Iigaya, K., Yi, S., Wahle, I. A., Tanwisuth, S., Cross, L., & O'Doherty, J. P. (2023), "Neural mechanisms underlying the hierarchical construction of perceived aesthetic value," *Nature Communications* 14:127, DOI 10.1038/s41467-022-35654-y** — the first neuroimaging study to fit per-feature *weights* for an aesthetic quantity: aesthetic value = weighted linear integration over low-level (mean hue, mean contrast) + high-level features, hierarchically (visual cortex → parietal/lateral PFC → mPFC). The neural analogue of the additive-decomposition hypothesis — for liking/value, not visual weight; position/geometry not among the features. Also: Taniyama et al. 2025 (Sci Rep 15:4878, DOI 10.1038/s41598-025-88815-6) — EEG oddball P3 asymmetry for hue-composition fluency; Liang et al. 2026 (Nat Commun, DOI 10.1038/s41467-026-73153-6) — 7T fMRI, content vs hedonic value neurally dissociated; Lin et al. 2024 (Appl Sci 14(16):7384, DOI 10.3390/app14167384) — EEG temporal decomposition (composition at 50–120 ms parietal). **Absence confirmed through late 2026: no fMRI study manipulates compositional balance as an IV; no neuroimaging study dissociates visual weight into factor-specific neural correlates.**
+
+### Design venues — 35 Tier 1 (34 new + 1 reclassified); the discipline never attempted the formula
+
+Crown: **Bonsiepe, G. (1968), "Eine Methode, Ordnung in der typographischen Gestaltung zu quantifizieren," *ulm* 21, 24–31** (no DOI) — the ONLY genuine quantification attempt the design discipline ever produced: system order vs distribution order, complexity C = −Σ p_i log₂ p_i over classified typographic objects. It quantifies *order*, never weight — which is exactly the mission's gap. The protocol tradition (Suwa & Tversky 1997; Suwa/Purcell/Gero 1998; Kavakli & Gero 2001/2002; Oxman 2002; Goldschmidt 1994/2003/2007; Stones & Cassidy 2007) documents designers judging compositions perceptually and tacitly. The tacit-judgment epistemology (Cross 1982/2001/2004; Schön & Wiggins 1992; Stolterman 2008) explains *why*: the field defends non-verbalizable judgment. **Net finding: the design discipline never attempted w(pixel group) — its epistemology independently explains Round 4's "no maker published numbers."**
+
+**Record correction:** Beier (2016) "Letterform research: An academic orphan" is a peer-reviewed *Visible Language* article — reclassified Tier 2 → Tier 1.
+
+### Type — ~170 new hard numbers; the first lab measurement of a compensation illusion
+
+~95 values measured from font binaries with fontTools (Fraunces, Inter, Newsreader, Roboto Flex opsz axes; Roboto Flex's 12 published parametric axes); ~35 from Microsoft font-engineering docs (CVT, VTT, DELTA bands, small-caps scales); ~10 craft numbers (incl. Arabic: TypeDrawers #2034 verticals at "76" vs 100 horizontals; Amiri horizontal:vertical ≈ 1.6:1 — the Latin contrast sign inverted, quantified). Crown: **de Waard, J.M., Van der Burg, E. & Olivers, C.N.L. (2019), "A Thickness Illusion: Horizontal Is Perceived as Thicker than Vertical," *Vision* 3(1):1, DOI 10.3390/vision3010001** — the FIRST lab measurement of the illusion behind horizontal/vertical stroke compensation: the vertical must be 5.4% thicker (Exp 1, n=28) / 2.6% (Exp 2) for perceptual equality; Futura measured at 13%, Avenir at 20% — **craft practice overshoots the lab value by 2.4–7.7×**. The psychophysical overshoot function remains unmeasured; nothing surfaced from Highsmith, Sowersby, Edmondson, or Spiekermann.
+
+### Net effect
+
+Round 5 fills the last five fronts: the frontier is current through Oct 2026 (the field keeps shipping learned/decomposed hybrids but never per-factor numbers); the separability question is answered — heaviness separates (lightness + chroma carry it, hue disputed), warm–cool doesn't, spatial balance was never tested past 2 factors; the neural analogue of the decomposition program exists (Iigaya 2023) — for value, not weight; the design discipline's silence is explained, not just observed; and the craft numeric vein is now the project's richest quantified corpus, revealing craft overshoots the lab illusion up to 7.7×. Two record corrections (Teixeira 2026 unverified; Beier 2016 → Tier 1).
+
+### Round 5's single most important find
+
+**de Waard, Van der Burg & Olivers (2019)** — the first lab measurement of the thickness illusion behind stroke compensation, exposing a 2.4–7.7× gap between craft practice and the lab value. A directly testable number for the Phase 2 experiment.
