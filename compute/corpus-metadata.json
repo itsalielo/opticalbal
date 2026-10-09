@@ -1,0 +1,87 @@
+[
+  {
+    "name": "disk_centered",
+    "manipulation": "baseline",
+    "note": "single black disk, geometrically centered"
+  },
+  {
+    "name": "disk_left",
+    "manipulation": "position",
+    "note": "disk shifted left: mass left of center"
+  },
+  {
+    "name": "disk_right",
+    "manipulation": "position",
+    "note": "disk shifted right: mass right of center"
+  },
+  {
+    "name": "disk_top",
+    "manipulation": "position",
+    "note": "disk shifted up (tests vertical anisotropy)"
+  },
+  {
+    "name": "disk_bottom",
+    "manipulation": "position",
+    "note": "disk shifted down"
+  },
+  {
+    "name": "two_inverse_ratio",
+    "manipulation": "area x lightness",
+    "note": "big light disk left vs small black disk right (Munsell-style)"
+  },
+  {
+    "name": "dark_vs_light",
+    "manipulation": "lightness",
+    "note": "equal areas, black vs light gray"
+  },
+  {
+    "name": "big_vs_small",
+    "manipulation": "area",
+    "note": "same black, 4:1 area ratio"
+  },
+  {
+    "name": "red_vs_blue",
+    "manipulation": "hue",
+    "note": "equal area/saturation, red vs blue"
+  },
+  {
+    "name": "sat_high_vs_low",
+    "manipulation": "saturation",
+    "note": "same hue family, high vs low saturation"
+  },
+  {
+    "name": "quadrants_heavy_UL",
+    "manipulation": "position x lightness",
+    "note": "heavy element upper-left, light elements elsewhere"
+  },
+  {
+    "name": "three_triangle",
+    "manipulation": "position",
+    "note": "three equal disks, triangular arrangement"
+  },
+  {
+    "name": "bar_left_heavy",
+    "manipulation": "lightness",
+    "note": "horizontal bar: black left half, gray right half"
+  },
+  {
+    "name": "mark_symmetric",
+    "manipulation": "baseline",
+    "note": "two identical solid bars, centered"
+  },
+  {
+    "name": "mark_switch_structure",
+    "manipulation": "structure",
+    "note": "left bar outlined, right bar solid, same outer size (Switch-logo structure)"
+  },
+  {
+    "name": "mark_switch_narrow_right",
+    "manipulation": "structure + area",
+    "note": "right solid bar drawn narrower (~outline width compensation, per Switch analyses)"
+  },
+  {
+    "name": "mark_g_style",
+    "manipulation": "structure",
+    "note": "circle with crossbar interruption (G-like)"
+  }
+]
