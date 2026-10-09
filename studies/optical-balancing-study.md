@@ -230,3 +230,44 @@ Round 2's verdict stands, sharpened twice: (1) the formal starting point is narr
 ### Round 3's single most important find
 
 The 2017 Russian model is **position-only** — vWc and vWs were named but never specified. Round 2's crown is real but smaller than it looked: the additive *promise* exists, the additive *formula* does not. The six-factor program starts exactly there.
+
+---
+
+## 13. Round 4 (2026-10-09) — filling the remainders
+
+Five new vein files: `optical-balancing-r4-japanese.md` (Japanese thesis/experimental territory), `optical-balancing-r4-russian2019.md` (the 2019 retrieval attempt), `optical-balancing-r4-seredkina.md` (venue verdict), `optical-balancing-r4-citations.md` (new-model citation check), `optical-balancing-r4-practitioners.md` (practitioner deep-dive). No duplication of Rounds 1–3.
+
+### Japanese territory — 7 new items (6 Tier 1, 1 Tier 2), zero overlap
+
+Routes: J-STAGE, KAKEN, CORE, publisher metadata; Japanese keywords 視覚的均衡 / 視覚的重量感 / 色彩の重量感. Crown find: **Hayashi, Mikio (1969), 「画面の力動的均衝に関する一研究」, *教育心理学研究* 3(1), 11–17, DOI 10.5926/jjep1953.3.1_11, free PDF on J-STAGE** — a direct experimental study of *dynamic* pictorial balance, n=587, 18 figures × 3 compositions: center preferred ~50% (~80% for symmetric figures); directional-tension figures preferred deviated *against* their tension; downward deviation beats upward 29:19; r=.318 with intelligence. Frames composition as weight-and-directionality and proposes continuous-deviation methods to locate a picture's equilibrium point — the six-factor program's position/direction arm, 55 years early. Also: Sunaga, Park & Spence (2016, DOI 10.1002/mar.20929) — lightness × vertical-position interaction on perceived heaviness (two of the six factors jointly); a 2022 Japanese J-STAGE follow-up (n=299) documenting the boundary condition (lightness-weight effects vanish for intangible goods); Yoto et al. (2007, DOI 10.2114/jpa2.26.373) — hue-heaviness ratings + EEG, a physiological anchor that hue carries weight-relevant signal; Nakauchi et al. (2022, *Scientific Reports*, DOI 10.1038/s41598-022-08365-z, KAKEN JP19H01119) — measured chromatic composition of paintings; a 1934 prewar paired-comparison experiment on two-color area ratios (1:9…9:1) showing area-ratio non-additivity — early area × hue interaction; Sato (2018, TMU master's thesis, oai:tokyo-metro-u.repo.nii.ac.jp:00006914) — the only located Japanese thesis using the exact term 視覚的重量感. Dead ends: CiNii Books (needs live session/API), Doshisha/Kyoto/Tsukuba/Kyushu IRs (nothing surfaced), no dedicated KAKEN balance project.
+
+### Russian 2019 — retrieval FAILED on the PDF body, target fully triangulated
+
+`*.istu.ru` does not resolve from the fetch network; DOI resolver 500'd — a local network-path failure, not a dead link. Crossref (deposit 2019-04-11), OpenAlex, Semantic Scholar, OpenAIRE all confirm the live OA PDF at `http://izdat.istu.ru/index.php/ISM/article/download/4317/2772` (CC-BY 4.0); OpenAIRE mined its 9-item reference list from the PDF itself. No Wayback snapshot; body text unindexed anywhere. **A live browser on a normal network fetches it in one step** — exact handoff in the vein file. Two corrections: (1) the only citation of the 2019 paper anywhere is the authors' own IEET-2019 follow-up (DOI 10.22213/2658-3658-2019-33-39) — zero third-party uptake, and that follow-up is the highest-value second fetch target; (2) the "76 compositions" figure is UNVERIFIED — appears nowhere in the abstract or metadata; treat as unconfirmed until the body is read. Coefficient tables: not retrieved; they exist only inside the PDF.
+
+### Seredkina — KILL
+
+Zero exact-title hits (Russian or English, six searches), no journal record in the Journal of Sib. Fed. Univ. Humanities & Social Sciences 2025–2026, handle page unreachable in both rounds. Not a retrievable publication. Dropped from the bibliography.
+
+### Citations — two new formula-lineage entries, zero replications
+
+- **Yang et al. (2025, *Symmetry* 17(12):2102, DOI 10.3390/sym17122102)** — genuinely new closed-form balance equation: BM = 1 − (|BMv| + |BMh|), weight = area × distance, for service-robot HMI (N=15, eye-tracking, non-significant correlations). First new balance formula since Lu et al.
+- **Wang et al. (2026, *Symmetry* 18(8):1402, DOI 10.3390/sym18081402)** — seven dimensionless measures + explicit sensitivity testing (resolution resampling, one-pixel morphology); first in the lineage to take metric fragility seriously; cites Lu et al. 2024 but reports no human-validation numbers.
+- **Lu/Tang/Wu 2024: 6 citations, none substantive** (background/self) — r = 0.986 stands unchallenged and unreplicated. **VME: 1 citation** (Yuan et al. 2026, background-level applied HMI paper) — note VME is journal-year 2026 (online 2025-12-24). DCM/APB: no new replication or refutation since Round 3.
+- The pattern holds and hardens: the engineered-formula lineage keeps producing new domain-bound formulas; **nobody replicates anybody.**
+
+### Practitioners — 4 new verified maker-attributed cases
+
+1. **Twitter bird (2012)** — Martin Grasser on record (LinkedIn 2023; Digiday 2023): circles as construction, then hand-perfected "every little detail... so that it felt balanced." The mission's exact phenomenon, maker-attributed — geometry as scaffold, the eye as finish.
+2. **Mailchimp rebrand (2018, Collins)** — wordmark "developed... to live in harmony with the Freddie icon," solving "hierarchy issues" (Creative Bloq). The clearest maker-attributed statement of the symbol–wordmark weight-matching task.
+3. **Mailchimp script facelift (2013)** — Jessica Hische on record (own process write-up, Fast Company): opened-up "Chimp" lettering, straightened baseline — optical correction as invisible restraint.
+4. **Warner Bros. shield (2019)** — Emily Oberman (Pentagram, Fast Company): the "WB" "redrawn to give the letterforms a better sense of balance."
+Plus: Spalter (Instagram 2016) judging a redraw by "visual weight"; two practitioner rule-of-thumb essays (cap-height sizing, stem-thickness matching); 8 type-design optical-compensation findings (Karow's 3%/5%, Spiekermann's diagonal rule, Frere-Jones's eye-over-ruler, Carter's Bell Centennial adjustments, Sitka/Role optical sizes). 16 investigated-but-empty cases refused with reasons. **Notable pattern: no maker, anywhere, published per-factor weight numbers** — only directional rules and discrete optical-size masters. Consistent with the computational track: the exact formula is underdetermined without human-anchored weights.
+
+### Net effect
+
+Round 4 closes four of the five remaining literature fronts: the Japanese experimental tradition is now mapped (Hayashi 1969 as its anchor); the Russian 2019 is fully triangulated but unfetched — it remains the single highest-value retrieval, one live-browser step away; Seredkina is killed; the formula lineage is current through 2026 with the replication vacuum now documented as a field property, not a data gap. The practitioner's silence on numbers is itself a finding: the industry has never published a weight function, which is why the missing experiment remains the only path.
+
+### Round 4's single most important find
+
+**Hayashi (1969)** — n=587 experimental study of dynamic pictorial balance, free on J-STAGE, with real numbers on position/direction preference: the position arm of the six-factor formula, measured 55 years before the program existed.
