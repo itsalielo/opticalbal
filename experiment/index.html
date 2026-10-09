@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Optical Balance — Adjustment Task (prototype instrument)</title>
+<link rel="stylesheet" href="styles.css">
+<!--
+  =====================================================================
+  HONESTY HEADER — read before use.
+  This is a PROTOTYPE research instrument. It has NOT been validated,
+  has no ethics approval, and NO HUMAN DATA has ever been collected with
+  it. It implements the method-of-adjustment paradigm of the spatial
+  balance of color pairs tradition (Moon & Spencer 1944; Granger 1953;
+  Morriss & Dunlap 1982/1987/1988) as an online fallback for the
+  optical-balancing mission. Do not treat its outputs as findings.
+  =====================================================================
+-->
+</head>
+<body>
+<noscript>
+  <div class="wrap"><p>This instrument requires JavaScript.</p></div>
+</noscript>
+
+<div class="wrap">
+
+  <!-- ============ 1. CONSENT ============ -->
+  <section id="screen-consent" class="screen active" aria-labelledby="consent-h">
+    <p class="eyebrow">Optical balancing &middot; adjustment task</p>
+    <h1 id="consent-h">A study of visual balance</h1>
+    <div class="placeholder-box">
+      <span class="placeholder-tag">Placeholder &mdash; not real consent text</span>
+      <p><strong>The text below is a stand-in.</strong> Real participant consent
+      language must come from the IRB / ethics-review process before any data
+      collection. Nothing on this page constitutes ethics approval.</p>
+      <hr class="rule">
+      <p><strong>Purpose (placeholder).</strong> You are invited to take part in a
+      research study on how people perceive visual balance in simple compositions.</p>
+      <p><strong>Procedure (placeholder).</strong> You will look at pairs of simple
+      colored compositions and adjust the size of one patch until the two
+      compositions feel equally balanced. There are 3 practice trials and 24 main
+      trials &mdash; about 10 minutes in total.</p>
+      <p><strong>Voluntary (placeholder).</strong> Participation is voluntary. You may
+      stop at any time by closing this page; partial data stays on your device only.</p>
+      <p><strong>Data (placeholder).</strong> No personal data is collected. Your
+      responses are stored only in this browser until you choose to download them.
+      Nothing is uploaded anywhere.</p>
+      <p><strong>Contact (placeholder).</strong> Principal investigator: [PLACEHOLDER].
+      Ethics approval reference: [PLACEHOLDER].</p>
+    </div>
+    <button class="btn" id="consent-yes">I consent &mdash; begin</button>
+    <button class="btn btn-ghost" id="consent-no">I do not consent</button>
+    <p class="hint" id="consent-decline-msg" hidden>Understood &mdash; no data was recorded. You can close this page.</p>
+  </section>
+
+  <!-- ============ 2. INSTRUCTIONS ============ -->
+  <section id="screen-instructions" class="screen" aria-labelledby="instr-h">
+    <p class="eyebrow">Optical balancing &middot; adjustment task</p>
+    <h1 id="instr-h">What you will do</h1>
+    <p>On each trial you will see <strong>two compositions side by side</strong>.
+    Each composition contains two patches on a gray background. The left
+    composition is fixed &mdash; it is the <strong>reference</strong>.</p>
+
+    <div class="fig">
+      <canvas id="fig-canvas" width="760" height="300"
+              aria-label="Diagram: a fixed reference composition on the left and an adjustable composition on the right"></canvas>
+      <p class="fig-cap">Worked example (static illustration &mdash; not interactive).
+      The right-hand composition has one patch whose size you control.</p>
+    </div>
+
+    <ol class="steps">
+      <li>Look at both compositions.</li>
+      <li><strong>Change the size of the patch</strong> in the panel marked
+      <em>Adjustable</em> &mdash; drag the slider, or use the
+      <strong>&larr;</strong> <strong>&rarr;</strong> / <strong>+</strong>
+      <strong>&minus;</strong> keys.</li>
+      <li>When the two compositions <strong>feel equally balanced</strong>,
+      press <strong>Confirm</strong> (or <strong>Enter</strong>).</li>
+    </ol>
+    <p>There is no right or wrong answer &mdash; go by feel. Take as long as you
+    need on each trial.</p>
+    <button class="btn" id="instr-begin">Start practice (3 trials)</button>
+  </section>
+
+  <!-- ============ 3 & 4. TRIAL (practice + main) ============ -->
+  <section id="screen-trial" class="screen" aria-labelledby="trial-counter">
+    <p class="eyebrow">Optical balancing &middot; adjustment task</p>
+    <div class="trial-head">
+      <div id="trial-counter" role="status" aria-live="polite"></div>
+      <div class="progress" id="trial-progress" aria-hidden="true"><div id="trial-progress-fill"></div></div>
+    </div>
+    <div class="panels">
+      <div class="panel">
+        <canvas id="canvas-left"></canvas>
+        <div class="panel-label" id="label-left"></div>
+        <div class="slider-slot" id="slot-left"></div>
+      </div>
+      <div class="panel">
+        <canvas id="canvas-right"></canvas>
+        <div class="panel-label" id="label-right"></div>
+        <div class="slider-slot" id="slot-right"></div>
+      </div>
+    </div>
+
+    <div class="slider-block" id="slider-block">
+      <label for="size-range">Size of the patch in the adjustable panel</label>
+      <input type="range" id="size-range" min="14" max="66" step="0.5"
+             aria-label="Adjust patch size">
+      <div class="slider-scale"><span>smaller</span><span>larger</span></div>
+      <button class="btn" id="confirm-btn">Confirm <span class="kbd">Enter</span></button>
+      <p class="hint">Drag the slider, or use &larr; &rarr; / + &minus; keys.
+      No numeric readout is shown on purpose. There is no right or wrong answer.</p>
+    </div>
+
+    <div id="practice-note" hidden>
+      <p><strong>Recorded.</strong> <span id="practice-note-text"></span></p>
+      <button class="btn" id="practice-continue">Continue</button>
+    </div>
+  </section>
+
+  <!-- ============ 5. DEBRIEF + EXPORT ============ -->
+  <section id="screen-debrief" class="screen" aria-labelledby="debrief-h">
+    <p class="eyebrow">Optical balancing &middot; adjustment task</p>
+    <h1 id="debrief-h">Done &mdash; thank you.</h1>
+    <p>Your responses have been recorded <strong>locally, in this browser only</strong>.
+    Nothing has been uploaded anywhere. Use the buttons below to download your data.</p>
+    <dl class="summary">
+      <dt>Session</dt><dd id="sum-session">&mdash;</dd>
+      <dt>Trials completed</dt><dd id="sum-trials">&mdash;</dd>
+      <dt>Attention checks</dt><dd>2 included in the data file (flagged, not judged).</dd>
+    </dl>
+    <div class="export-row">
+      <button class="btn" id="export-json">Download JSON</button>
+      <button class="btn btn-ghost" id="export-csv">Download CSV</button>
+      <button class="btn btn-ghost" id="export-copy">Copy JSON to clipboard</button>
+      <div class="status" id="export-status" role="status" aria-live="polite"></div>
+    </div>
+    <hr class="rule">
+    <p class="hint">Prototype instrument &mdash; not validated. No human data has been
+    collected with this tool outside the session you just completed.</p>
+  </section>
+
+</div>
+
+<div class="narrow-note">
+  Advisory: this instrument is designed for laptop / desktop screen widths.
+  On narrow screens the two compositions may be too small for reliable judgment.
+</div>
+
+<script src="experiment.js"></script>
+</body>
+</html>
