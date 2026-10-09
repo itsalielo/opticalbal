@@ -190,3 +190,43 @@ Round 1's "no exact general formula" stands, sharpened. The project now has: (a)
 ### Round 2's single most important find
 
 **Al Akkad & Gazimzyanov (2017)** — the only explicit additive factor-decomposition of visual weight in any language. It is the reader's hypothesized program in formal dress: vW = vWsS + vWc + vWs, with coefficients explicitly designated for fitting to human ratings.
+
+---
+
+## 12. Round 3 (2026-10-09) — Phase 1 literature gaps executed
+
+Five new vein files: `optical-balancing-r3-theses.md` (thesis repositories), `optical-balancing-r3-fukada.md` (Fukada retrieval), `optical-balancing-r3-russian.md` (Russian coefficients + Seredkina), `optical-balancing-r3-replications.md` (replication scan + fMRI), `optical-balancing-r3-frontier.md` (2025–2026 frontier). No duplication of Rounds 1–2.
+
+### Theses — the unsearched territory, searched
+
+14 dissertation records. Most relevant: **Fillinger (2020, Konstanz, advisor Hübner)** — the dissertation *behind* the DCM model, explicitly testing that "each element in a picture has a certain perceptual weight that depends on its low-level features such as color, size and form"; finds the mechanical-balance metaphor holds for simple stimuli but collapses for complex pictures. Open (CC-BY) via KOPS. Runner-up: **Mokarian (2007, Saskatchewan)** — a forgotten formula attempt ("more general formula" combining geometry and color), cited once (Koenderink et al. 2017), then vanished. Repository notes: EThOS confirmed live on relaunched Hyku (metadata-only, 650k+ records); DART-Europe closed (use NDLTD/OpenAlex); NDLTD search JS-only; DiVA 403'd; theses.fr API failed; CiNii Dissertations dead-ended — Japanese theses remain unsearched.
+
+### Fukada — holding identified, text unobtained; later paper read in full
+
+The 1983–85 Doshisha bulletin papers (color/form and color/size in pictorial balance) are print-only: CiNii records, no PDF anywhere, zero citing literature, WorldCat zero hits. ILL path documented (NDL copy service most practical). Crown find: Fukada's own later follow-up paper (1993 experiments, Tsukamoto Gakuin funding) is **freely available and was read end to end** — a force-balance paradigm: subjects place a 3 cm colored square to achieve "good harmony," placement distance d measured; printed figure "kicks" ∝ its visual weight, color square "resists" ∝ its own. Results: black > gray > white kick strength; color resistance blue < green < yellow < red (red heaviest); larger figures kick farther; n ≥ 100 needed.
+
+### Russian coefficients — unobtainable, and the model reframed
+
+The 2019 paper exists and is open access (DOI 10.22213/2410-9304-2019-1-26-33), but no numeric coefficient table is retrievable — consistent with the 2017 framing where coefficients are per-source multipliers of hand-drawn/Akima-spline pF curves, possibly existing only inside the authors' Jenetics run. Exact live-access path documented for a future browser session. **Critical reframe from reading the 2017 full text end to end:** the "only additive decomposition in any language" is strictly a **position-only** formula — vWc (color) and vWs (size) were never specified, only named ("the same approach could compute color/size influence"). The additive promise was never fulfilled even for its own three terms. This is exactly where the six-factor program must begin. Seredkina et al.: venue still unconfirmed (SibFU handle 2311/160105), theoretical paper, no formula to retrieve.
+
+### Replications — verdicts per model
+
+- **DCM: EXTENDED** — 43 citing papers; originating lab published honest nulls (Hübner & Thömmes 2019; Hübner & Fillinger 2019); Chen & Lu (2023) independently decomposed visual weight three ways.
+- **APB: REFUTED as a general index** — 107 citing papers, one genuine empirical re-test (Gershoni & Hochstein 2011, first-fixation balance of Japanese calligraphy): low correlation, boundary-condition failure, zero successful independent replications.
+- **VME: UNREPLICATED** — one citing paper (background citation only).
+- **Birkhoff: UNREPLICATED** (Eysenck 1941 refutation stands).
+- **McManus/Stöver/Kim CoM: EXTENDED** — aesthetic-payoff claim twice weakened (Samuel & Kerzel 2013; Leyssen et al. 2012); computational extensions exist.
+- **fMRI: none through 2026.** No study manipulates compositional balance as an IV. EEG/ERP only.
+- **The live fault line:** balance *measures* keep working computationally while balance→*preference* effects keep coming back weak or null.
+
+### Frontier — 15 new items, verdict extended not refuted
+
+Biggest: **Redies et al. (2025, *Behavior Research Methods*)** — four leading European quantitative-aesthetics labs shipped one open-source Python toolbox canonicalizing APB and DCM into versioned reference code (+43 image properties). The strongest infrastructure event since Kandemir 2017. Also: Wang, Liu & Huang (2026) — seven dimensionless descriptors with perturbation audits, first paper demanding *provenance* for balance measures; Thömmes, Hübner & Hayn-Leichsenring (2025) — free gallery-wall arrangements converge on CoM midline (ecological support); Ruan & Li (2026) — saliency + symmetry + HSV in one pipeline. Missing-experiment methodology prescribed independently twice: **pairwise comparative judgments** (Law of Comparative Judgment) over ratings (FGAesQ CVPR 2026 oral; 2026 preprint).
+
+### Net effect
+
+Round 2's verdict stands, sharpened twice: (1) the formal starting point is narrower than believed — position-only, with color/size as unfilled promises; (2) the field's own replication record draws the fault line the formula must cross: computation works, preference doesn't follow. New assets: the Redies toolbox (reference implementations), the Fukada force-balance numbers, the pairwise-comparison prescription for the missing experiment, and 14 dissertations (Fillinger 2020 as the deepest).
+
+### Round 3's single most important find
+
+The 2017 Russian model is **position-only** — vWc and vWs were named but never specified. Round 2's crown is real but smaller than it looked: the additive *promise* exists, the additive *formula* does not. The six-factor program starts exactly there.
