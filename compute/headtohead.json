@@ -1,0 +1,240 @@
+[
+  {
+    "image": "disk_centered",
+    "manipulation": "baseline",
+    "scores": {
+      "DCM": 1.0,
+      "VME": 1.0,
+      "VME-9g": 1.0,
+      "Rus-pos": 1.0,
+      "Rus-ext": 1.0,
+      "Saliency": 0.9999999999999997,
+      "Tbx-DCM": 0.9950000000000001,
+      "Tbx-Bal": 0.4955096981821344
+    }
+  },
+  {
+    "image": "disk_left",
+    "manipulation": "position",
+    "scores": {
+      "DCM": 0.6464466094067263,
+      "VME": 0.75,
+      "VME-9g": 0.75,
+      "Rus-pos": 0.6464466094067262,
+      "Rus-ext": 0.6464466094067263,
+      "Saliency": 0.6464466094067325,
+      "Tbx-DCM": 0.6499642875362572,
+      "Tbx-Bal": 0.43100374010611464
+    }
+  },
+  {
+    "image": "disk_right",
+    "manipulation": "position",
+    "scores": {
+      "DCM": 0.6464466094067263,
+      "VME": 0.75,
+      "VME-9g": 0.75,
+      "Rus-pos": 0.6464466094067263,
+      "Rus-ext": 0.6464466094067263,
+      "Saliency": 0.6464466094067327,
+      "Tbx-DCM": 0.6428935732866182,
+      "Tbx-Bal": 0.4346351222057928
+    }
+  },
+  {
+    "image": "disk_top",
+    "manipulation": "position",
+    "scores": {
+      "DCM": 0.6464466094067263,
+      "VME": 0.75,
+      "VME-9g": 0.75,
+      "Rus-pos": 0.6464466094067262,
+      "Rus-ext": 0.6464466094067263,
+      "Saliency": 0.6464466094067325,
+      "Tbx-DCM": 0.6499642875362572,
+      "Tbx-Bal": 0.43100374010611464
+    }
+  },
+  {
+    "image": "disk_bottom",
+    "manipulation": "position",
+    "scores": {
+      "DCM": 0.6464466094067263,
+      "VME": 0.75,
+      "VME-9g": 0.75,
+      "Rus-pos": 0.6464466094067263,
+      "Rus-ext": 0.6464466094067263,
+      "Saliency": 0.6464466094067327,
+      "Tbx-DCM": 0.6428935732866182,
+      "Tbx-Bal": 0.4346351222057928
+    }
+  },
+  {
+    "image": "two_inverse_ratio",
+    "manipulation": "area x lightness",
+    "scores": {
+      "DCM": 0.9745507565456155,
+      "VME": 0.8659153380978559,
+      "VME-9g": 0.8423891173961212,
+      "Rus-pos": 1.0,
+      "Rus-ext": 0.9620630270710313,
+      "Saliency": 0.8732585806752602,
+      "Tbx-DCM": 0.9714956143725215,
+      "Tbx-Bal": 0.6872576791527928
+    }
+  },
+  {
+    "image": "dark_vs_light",
+    "manipulation": "lightness",
+    "scores": {
+      "DCM": 0.7772613639262375,
+      "VME": 1.0,
+      "VME-9g": 0.9596153846153846,
+      "Rus-pos": 1.0,
+      "Rus-ext": 0.9999999999999999,
+      "Saliency": 0.7772611463824768,
+      "Tbx-DCM": 0.7807683873160625,
+      "Tbx-Bal": 0.4824073671392537
+    }
+  },
+  {
+    "image": "big_vs_small",
+    "manipulation": "area",
+    "scores": {
+      "DCM": 0.8103756526317769,
+      "VME": 0.8659153380978559,
+      "VME-9g": 0.8423891173961212,
+      "Rus-pos": 1.0,
+      "Rus-ext": 0.9620630270710313,
+      "Saliency": 0.8942865725520437,
+      "Tbx-DCM": 0.8125833518600869,
+      "Tbx-Bal": 0.5580528940548182
+    }
+  },
+  {
+    "image": "red_vs_blue",
+    "manipulation": "hue",
+    "scores": {
+      "DCM": 0.9881786171226122,
+      "VME": 1.0,
+      "VME-9g": 0.9596153846153846,
+      "Rus-pos": 1.0,
+      "Rus-ext": 1.0,
+      "Saliency": 0.9857599600972801,
+      "Tbx-DCM": 0.9854226202628867,
+      "Tbx-Bal": 0.7327484260107988
+    }
+  },
+  {
+    "image": "sat_high_vs_low",
+    "manipulation": "saturation",
+    "scores": {
+      "DCM": 0.9405635138286295,
+      "VME": 1.0,
+      "VME-9g": 0.9596153846153846,
+      "Rus-pos": 1.0,
+      "Rus-ext": 0.9916529012707128,
+      "Saliency": 0.8745317758087416,
+      "Tbx-DCM": 0.9433210797562268,
+      "Tbx-Bal": 0.6765666946277806
+    }
+  },
+  {
+    "image": "quadrants_heavy_UL",
+    "manipulation": "position x lightness",
+    "scores": {
+      "DCM": 0.6915325189663664,
+      "VME": 0.8225718901453958,
+      "VME-9g": 0.7421198091685938,
+      "Rus-pos": 0.8671007187875132,
+      "Rus-ext": 0.8741866139661421,
+      "Saliency": 0.7663980306131116,
+      "Tbx-DCM": 0.6973450809915689,
+      "Tbx-Bal": 0.4847190024158716
+    }
+  },
+  {
+    "image": "three_triangle",
+    "manipulation": "position",
+    "scores": {
+      "DCM": 0.8585786437626906,
+      "VME": 0.9,
+      "VME-9g": 0.9171641791044776,
+      "Rus-pos": 0.7979131556784048,
+      "Rus-ext": 0.8035505140591946,
+      "Saliency": 0.8585786437626914,
+      "Tbx-DCM": 0.855,
+      "Tbx-Bal": 0.756718774064377
+    }
+  },
+  {
+    "image": "bar_left_heavy",
+    "manipulation": "lightness",
+    "scores": {
+      "DCM": 0.8862752796771772,
+      "VME": 1.0,
+      "VME-9g": 1.0,
+      "Rus-pos": 1.0,
+      "Rus-ext": 1.0,
+      "Saliency": 0.8749592977026632,
+      "Tbx-DCM": 0.8903414390026935,
+      "Tbx-Bal": 0.49470205807075274
+    }
+  },
+  {
+    "image": "mark_symmetric",
+    "manipulation": "baseline",
+    "scores": {
+      "DCM": 1.0,
+      "VME": 1.0,
+      "VME-9g": 0.9762179487179486,
+      "Rus-pos": 0.9999999999999999,
+      "Rus-ext": 1.0,
+      "Saliency": 0.9999999999999999,
+      "Tbx-DCM": 0.9950000000000001,
+      "Tbx-Bal": 0.6054160098690973
+    }
+  },
+  {
+    "image": "mark_switch_structure",
+    "manipulation": "structure",
+    "scores": {
+      "DCM": 0.9303577095420382,
+      "VME": 0.950755464159812,
+      "VME-9g": 0.9727175687263035,
+      "Rus-pos": 0.9999999999999999,
+      "Rus-ext": 0.9817616630036975,
+      "Saliency": 0.9506645278652394,
+      "Tbx-DCM": 0.9256696562634075,
+      "Tbx-Bal": 0.5178965922444183
+    }
+  },
+  {
+    "image": "mark_switch_narrow_right",
+    "manipulation": "structure + area",
+    "scores": {
+      "DCM": 0.9632475686078682,
+      "VME": 0.9740121065375302,
+      "VME-9g": 0.9955590327417273,
+      "Rus-pos": 0.9752512626584708,
+      "Rus-ext": 0.9905754624118273,
+      "Saliency": 0.9390741552932763,
+      "Tbx-DCM": 0.9609487516204668,
+      "Tbx-Bal": 0.5447538337368845
+    }
+  },
+  {
+    "image": "mark_g_style",
+    "manipulation": "structure",
+    "scores": {
+      "DCM": 0.965936168709814,
+      "VME": 0.9759132339015152,
+      "VME-9g": 0.9759132339015152,
+      "Rus-pos": 0.9659361687098142,
+      "Rus-ext": 0.9659361687098142,
+      "Saliency": 0.9899740304404846,
+      "Tbx-DCM": 0.9679843788128357,
+      "Tbx-Bal": 0.44496922348484846
+    }
+  }
+]
